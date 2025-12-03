@@ -2,10 +2,13 @@
 
 CNN (Convolutional Neural Network) ile el yazısı rakam tanıma web uygulaması.
 
-## 🎯 Özellikler
+## � Demo
+
+👉 [digitbrain.onrender.com](https://digit-recognition-9jj7.onrender.com)
+
+## �🎯 Özellikler
 
 - ✏️ Canvas üzerinde rakam çizme
-- 📷 Kamera ile rakam tanıma
 - 🤖 %99+ doğruluk oranı
 - 📊 Olasılık dağılımı gösterimi
 
@@ -30,7 +33,7 @@ Tarayıcıda aç: http://127.0.0.1:5001
 
 ## 👥 Ekip
 
-- Ömer Edebali
+- Ömer Edebalı
 - Taha İslam Güven
 
 ## 🛠️ Teknolojiler

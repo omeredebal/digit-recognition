@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # Modeli yükle
 print("🔄 Model yükleniyor...")
-model = keras.models.load_model('model/digit_model.h5')
+model = keras.models.load_model('model/digit_model.h5', compile=False)
 print("✅ Model başarıyla yüklendi!")
 
 def preprocess_image(image_data):

@@ -3,14 +3,14 @@ import numpy as np
 from PIL import Image
 import io
 import base64
-from tensorflow import keras
 import cv2
+from inference import DigitClassifier
 
 app = Flask(__name__)
 
-# Modeli yükle
+# Modeli yükle (TensorFlow yerine hafif numpy inference)
 print("🔄 Model yükleniyor...")
-model = keras.models.load_model('model/digit_model.h5', compile=False)
+model = DigitClassifier('model/weights.npy')
 print("✅ Model başarıyla yüklendi!")
 
 def preprocess_image(image_data):
@@ -98,7 +98,7 @@ def predict():
         processed_image = preprocess_image(image_data)
         
         # Tahmin yap
-        prediction = model.predict(processed_image, verbose=0)
+        prediction = model.predict(processed_image)
         predicted_digit = int(np.argmax(prediction))
         confidence = float(np.max(prediction) * 100)
         

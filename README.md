@@ -4,7 +4,7 @@ CNN (Convolutional Neural Network) ile el yazısı rakam tanıma web uygulaması
 
 ## � Demo
 
-👉 [digitbrain.onrender.com](https://digit-recognition-9jj7.onrender.com)
+👉  https://digit-recognition-9jj7.onrender.com
 
 ## �🎯 Özellikler
 
